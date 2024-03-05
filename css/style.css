@@ -1,0 +1,31 @@
+@import url("variable.css");
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-font);
+
+}
+ header{
+    display: flex;
+    justify-content: center;
+    
+    
+
+ }
+
+
+main {
+    width: 90%;
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 8px;
+    grid-template-areas: ;
+}
