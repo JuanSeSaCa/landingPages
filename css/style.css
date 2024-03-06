@@ -9,23 +9,51 @@
 
 body {
     background: var(--color-font);
+    margin: 2rem;
 
 }
  header{
     display: flex;
     justify-content: center;
-    
-    
-
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
  }
+
+header button {
+    display: flex;
+    justify-content: center;
+    align-self: center; 
+    font-size: 0.8rem;
+    background-color: rgb(42, 40, 40);
+    color: aliceblue;
+    padding: 0.6rem 2rem;
+    border-radius: 10px;
+    border: none;
+}
+header h1{
+    font-size: 3rem;
+    color:  rgb(42, 40, 40);;
+}
+header p{
+    padding: 1rem 0 ;
+    font-size: 1.3rem;
+    color: rgb(42, 40, 40);
+}
+
 
 
 main {
-    width: 90%;
+    width: 100%;
     
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
     grid-gap: 8px;
     grid-template-areas: ;
+}
+
+main img{
+    width: 100%;
 }
