@@ -99,7 +99,31 @@ body{
 
 .card{
     width: 150px;
-    height: ;
+    height: 115px; 
+    background: var(--color-card);
+    display: flex;
+    padding: 5px 15px;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.card img{
+width: 25px;
+height: 25px;
+object-fit: contain;
+}
+
+.card h3{
+    font-size: 1.2rem;
+    margin: 5px 0;
+
+}
+
+.card p{
+    font-size: 0.5rem;
+    height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 }
 
 
@@ -108,6 +132,7 @@ body{
     body{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(7, 1fr);
+        text-align: center;
         grid-template-areas: 
         "titulo titulo titulo"
         "logo logo logo"
@@ -118,4 +143,27 @@ body{
         "caja_1 caja_2 caja_3"
         ;
     }
+
+    .item1 h1{
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .item2 img{
+        height: 100%;
+    }
+    .item3 p {
+        width: 100%;
+    }
+    .item1, .item3, .item4{
+        margin: 0;
+    }
+
+    .item5,   .item6,   .item7 {
+        top: -20px;
+    }
+
+
+
+
 }
