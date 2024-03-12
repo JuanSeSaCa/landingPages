@@ -9,7 +9,7 @@
 
 body {
     background: var(--color-font);
-    margin: 2rem;
+    margin: 1rem;
 
 }
  header{
@@ -18,6 +18,7 @@ body {
     align-items: center;
     text-align: center;
     width: 500px;
+    height: 40vh;
     margin: 0 auto;
  }
 
@@ -31,9 +32,10 @@ header button {
     padding: 0.6rem 2rem;
     border-radius: 10px;
     border: none;
+    margin: 0 auto 1rem auto;
 }
 header h1{
-    font-size: 3rem;
+    font-size: 3.5rem;
     color:  rgb(42, 40, 40);;
 }
 header p{
@@ -45,15 +47,16 @@ header p{
 
 
 main {
-    width: 100%;
-    
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
+    height: 60vh;
+    width: 100%;
+    grid-template-columns: repeat(4,.8fr);
+    grid-template-rows: repeat(2,.8fr);
     grid-gap: 8px;
     grid-template-areas: ;
 }
 
 main img{
     width: 100%;
+    height: 100%;
 }
