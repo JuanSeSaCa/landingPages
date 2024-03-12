@@ -64,9 +64,10 @@ body{
 .fondo img{
     object-fit:scale-down;
     position: relative;
-    width: 100%;
-    height: 100vh;
-   bottom: 34%;
+    width: 90%;
+    height: 90vh;
+   bottom: 20%;
+   left: 9%;
    
 
 }
