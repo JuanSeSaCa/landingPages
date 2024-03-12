@@ -20,53 +20,90 @@ body{
     "caja_1 caja_2 caja_3 ."
     ;
 }
-.item_1{
+.banner{
+    background: var(--color-primary);
+    position: absolute;
+    width: 100%;
+    height: 85vh;
+    z-index: -5;
+
+}
+.item1{
     margin-left: 25px;
-    background: red;
+    /* background: red; */
     grid-area: titulo;
 }
-.item_1 h1{
-    font-size: 5.5em;
+.item1 h1{
+    font-size: 7.5em;
     line-height: 1;
     font-weight: normal;
+    color: var(--color-ternary);
 }
-.item_2{
-    background: olivedrab;
+.item2{
+   
+    /* background: olivedrab; */
     grid-area: logo;
 }
-.item_3{
+
+.item2 img{
+    width: 100%;
+    height: 110%;
+    object-fit: contain;
+
+}
+.item3{
     margin-left: 25px;
-    background: darkcyan;
+    /* background: darkcyan; */
     grid-area: parrafo;
+    display: flex;
+    align-items: center;
 }
-.item_3 p{
+.item3 p{
     width: 75%;
-    background: #e100ff;
+    height: 60px;
+    color: var(--color-ternary);
+    /* background: #e100ff; */
 }
-.item_4{
+.item4{
     margin-left: 25px;
-    background: darkgoldenrod;
+    /* background: darkgoldenrod; */
     grid-area: boton;
 }
-.item_4 button{
+.item4 button{
     border: none;
     background: var(--color-botton);
     border-radius: 20px;
-    padding: 12px;
+    padding: 20px;
+    font-size: 1.2rem;
     color: var(--color-ternary);
 }
-.item_5{
-    background: #2d7aa0;
+
+.item5,.item6,.item7{
+    position: relative;
+    top: -45px;
+    display: flex;
+    justify-content: center;
+}
+.item5{
+    /* background: #2d7aa0; */
     grid-area: caja_1;
 }
-.item_6{
-    background: #31b80b;
+.item6{
+    /* background: #31b80b; */
     grid-area: caja_2;
 }
-.item_7{
-    background: #b20bb8;
+.item7{
+    /* background: #b20bb8; */
     grid-area: caja_3;
 }
+
+.card{
+    width: 150px;
+    height: ;
+}
+
+
+
 @media (width <= 800px){
     body{
         grid-template-columns: repeat(3, 1fr);
